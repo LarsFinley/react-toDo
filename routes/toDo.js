@@ -8,7 +8,6 @@ router.route('/toDo')
 		var toDo = new ToDo();
 		
 		toDo.name = req.body.name;
-		toDo.id = req.body.id;
 		toDo.dueDate = req.body.dueDate;
 		toDo.description = req.body.description;
 
@@ -49,7 +48,6 @@ router.route('/toDo/:toDo_id')
 		} else {
 			
 			toDo.name = req.body.name || toDo.name;
-			toDo.id = req.body.id || toDo.id;
 			toDo.dueDate = req.body.dueDate || toDo.dueDate;
 			toDo.description = req.body.description || toDo.description;
 
